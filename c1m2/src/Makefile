@@ -81,6 +81,7 @@ endif
 # `make build` builds the executable
 .PHONY: build
 build: $(TARGET)
+	size $<
 
 # `make compile-all` compiles all dependencies but does not
 # performing the linking step
