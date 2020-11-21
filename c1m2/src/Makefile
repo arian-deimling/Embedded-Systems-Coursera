@@ -102,7 +102,7 @@ memory.o: memory.c
 # additional object files required for MSP432 build
 ifeq ($(PLATFORM), MSP432)
 
-interrupts_msp432p401r_gcc.o: interrupts_msp432p401r_gcc.c memory.o
+interrupts_msp432p401r_gcc.o: interrupts_msp432p401r_gcc.c
 	$(CC) $(CFLAGS) $(INCLUDES) -c -o $@ $<
 
 startup_msp432p401r_gcc.o: startup_msp432p401r_gcc.c
